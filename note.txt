@@ -1,0 +1,64 @@
+fichier source -> Analyse Syntaxique -> table de réactions
+
+
+class Reaction, class Espece 
+
+
+E1     : A         + B         -> C        | 3.5    mM, 1      mM - 150                        	       ;
+Enzyme : substrat1 + substrat2 -> produit1 | (refA) Km, (refB) Km - (coefficient de catalysme en s^-1) ;
+
+					     V = Vmax / 2
+
+
+E + A -> EA     [v1]
+EA    -> E + A  [v2]	(v2/v1 associé au premier Km)
+
+(*complexe enzyme substrat*)
+
+E + B -> EB     [v3]
+EB    -> E + B  [v4]	(v4/v3 associé au deuxième Km)
+
+
+EA + B -> EAB   [v3]
+EB + A -> EAB   [V1]
+EAB    -> E + C [v5]
+ 
+-- Les réactions --
+
+LISTREAC ::= REAC | REAC LISTREAC
+REAC     ::= 'ident' ':' LISTM '->' LISTM '|'
+	     LISTCONC '-' 'nombre' ';'
+
+LISTM 	 ::= 'ident' | 'ident' '+' LISTM
+LISTCONC ::= 'nombre' UNITE | 'nombre' UNITE ',' LISTCONC
+UNITE 	 ::= 'mM' | 'uM'
+
+1. table de hachage pour les noms d'espèces biochimiques (taille < 65536)
+
+2. class Espece {
+	int indice;
+	...
+}  
+
+3. class Reaction{
+	Espece* enzyme;
+	Espece* substrats [8];
+	int 	n_substr;
+	Espece* produits [8];
+	int 	n_prod;
+	.
+	.
+	.	
+}
+
+	
+	
+E1 :  a + b -> c + d | ..........;
+E1 :  i | 10 uM;
+
+REAC ::= 'ident' ':' LISTM '->' ...
+REAC ::= 'ident' ':' 'ident' '|' 'nbi' 'inibi'
+
+
+
+

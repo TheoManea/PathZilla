@@ -1,0 +1,15 @@
+// Reactions
+
+"alcohol dehydrogenase" : "A" + "B" -> "C" + "D" | 910 uM, 1.3 mM - 365;	// 0-14
+"alcohol dehydrogenase" : "C" + "B" -> "E" + "F" | 910 uM, 1.3 mM - 365;	// 0-14
+"alcohol dehydrogenase" : "F" + "B" -> "E" + "G" | 910 uM, 1.3 mM - 365;	// 0-14
+"alcohol dehydrogenase" : "D" + "K" -> "Z" + "G" | 910 uM, 1.3 mM - 365;	// 0-14
+
+// Inhibitions
+
+"glycerol dehydrogenase" : "NADH" | 25 uM;
+"L-iditol 2-dehydrogenase" : "NADH" | 10 uM;
+"isocitrate dehydrogenase (NAD+)" : "NADH" | 63 uM;
+"isocitrate dehydrogenase (NADP+)" : "NADH" | 60 uM;
+"3alpha-hydroxysteroid 3-dehydrogenase (Si-specific)" : "NADH" | 6 uM;
+"mannitol 2-dehydrogenase" : "NADH" | 61 uM;

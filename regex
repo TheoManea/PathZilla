@@ -1,0 +1,21 @@
+("(.*?)" (\:))|((".*?")|[\+"]*).(->)|((".*?")|[\+"]*).(\|)
+
+"(.*?)"(\s)(\:)(\s)
+
+( (".*?") (\s) ((\+)|(\s)) )
+
+nomEnzyme + ":" : ("(.*?)" (\:)) 
+
+substrat(s) : ((\s)(".*?")(\s)((\+)*))
+
+flèche : (->)
+
+produits : ((\s)(".*?")(\s)((\+)*))(\|)
+
+regex produits : ("(.*?)"(\s)(\:))((\s)(".*?")(\s)((\+)*))(->)((\s)(".*?")(\s)((\+)*))(\|)
+
+regex Inhibition : (".*?")(\s)(\:)(\s)(".*?")(\s)(\|)
+
+structure réaction :  "Nom Enzyme" : "substrat1" + "substrat2" -> "produit1" + "produit2" | refA, refB - coeff;
+
+
