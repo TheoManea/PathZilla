@@ -1,5 +1,3 @@
-// Reactions
-
 "pyranose oxidase" : "L-Sorbose" -> "5-keto-D-fructose" + "H2O2" | 23.5 mM - 58.8;	// 0-14
 "mannitol 2-dehydrogenase" : "D-gulitol" + "NAD+" -> "L-Sorbose" + "NADH" | 680 mM, 110 uM - 60;	// 6-10
 "NADH peroxidase" : "NADH" + "H2O2" -> "NAD+" | 2 uM, 20 uM - 25;	// 5-8.5

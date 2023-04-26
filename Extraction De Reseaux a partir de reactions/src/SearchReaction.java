@@ -158,7 +158,9 @@ public class SearchReaction {
         buildRootChemical();
         buildRootToNextHashMap();
 
+        //iterative
         NaryTreeNode<AbstractMap.SimpleEntry<String,Reaction>> root = buildTree(new AbstractMap.SimpleEntry<>(startingPoint,null),depth+1, null);
+
         prettyPrint(root,"");
         System.out.println("Number of paths found  : " + countPaths(root,endingPoint));
         extractPaths();
