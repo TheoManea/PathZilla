@@ -16,6 +16,7 @@ The set of BRENDA's reactions (approximately 53000) constitutes a directed graph
 
   ![alt text](https://i.ibb.co/qRbSqjT/Capture-d-cran-du-2023-04-21-22-48-06.png)
   ![alt text](https://i.ibb.co/Gs3g2hZ/Capture-d-cran-du-2023-04-21-22-48-38.png)
+  ![alt text](https://i.ibb.co/6vXYXf7/path-detail.png)
   
 # Things to be done 
 
