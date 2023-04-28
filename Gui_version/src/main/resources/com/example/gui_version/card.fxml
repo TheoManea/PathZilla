@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="card" prefHeight="242.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <Text fx:id="enzymeName" layoutX="290.0" layoutY="44.0" text="enzymeName" textAlignment="CENTER" wrappingWidth="324.0" />
+   <Text fx:id="substrats" layoutX="83.0" layoutY="111.0" text="substrats" textAlignment="CENTER" wrappingWidth="330.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2197ff3d" height="37.0" layoutX="280.0" layoutY="24.0" stroke="#4b22c9" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="344.0" />
+   <Line endX="-100.0" endY="44.5" layoutX="558.0" layoutY="63.0" startX="-100.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#21ff553d" height="30.0" layoutX="76.0" layoutY="92.0" stroke="#4b22c9" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="344.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff21503d" height="30.0" layoutX="505.0" layoutY="92.0" stroke="#4b22c9" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="344.0" />
+   <Line endX="-62.0" layoutX="567.0" layoutY="108.0" startX="-147.0" />
+   <Text fx:id="reactifs" layoutX="518.0" layoutY="110.0" text="reactifs" textAlignment="CENTER" wrappingWidth="324.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#969a9e1f" height="170.0" layoutX="15.0" stroke="BLACK" strokeType="INSIDE" width="896.0" />
+   <Polygon fill="#dc5eff40" layoutX="76.0" layoutY="214.0" points="369.0, -8.0, 387.0, 12.0, 406.0, -8.0" stroke="#ff000000" strokeType="INSIDE" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d21fff38" height="37.0" layoutX="452.0" layoutY="169.7" stroke="WHITE" strokeType="INSIDE" width="21.0" />
+</AnchorPane>

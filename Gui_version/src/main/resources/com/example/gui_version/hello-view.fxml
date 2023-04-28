@@ -38,7 +38,8 @@
       <Label fx:id="nbPathLabel" layoutX="497.0" layoutY="72.0" text="Number of reactions discovered : " />
       <ListView fx:id="listReactions" layoutX="497.0" layoutY="169.0" prefHeight="238.0" prefWidth="474.0" />
       <Label layoutX="683.0" layoutY="143.0" text="Result overview : " />
-      <Button fx:id="runTestButton" layoutX="703.0" layoutY="457.0" mnemonicParsing="false" onAction="#openTestWindow" text="Run test" />
+      <Button fx:id="runTestButton" layoutX="594.0" layoutY="456.0" mnemonicParsing="false" onAction="#openTestWindow" text="Run test" />
       <CheckBox fx:id="cBoxInhibitions" layoutX="75.0" layoutY="459.0" mnemonicParsing="false" text="Include inhibitons ?" />
+      <Button fx:id="pathDetailBtn" layoutX="762.0" layoutY="456.0" mnemonicParsing="false" onAction="#openDetailWindow" text="Show paths" />
    </children>
 </AnchorPane>

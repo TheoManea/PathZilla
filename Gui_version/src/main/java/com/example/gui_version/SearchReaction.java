@@ -13,7 +13,7 @@ public class SearchReaction {
     public ArrayList<String> rootChemical = new ArrayList<>();
     private HashMap<String,List<AbstractMap.SimpleEntry<String,Reaction>>> rootToNext = new HashMap<>();
     List<NaryTreeNode<AbstractMap.SimpleEntry<String,Reaction>>> finalNodes;
-    List<List<String>> paths;
+    public List<List<String>> paths;
     public List<String> selectedReaction = new ArrayList<>();
     public int depth;
     public SearchReaction(ArrayList<Reaction> rList, ArrayList<Inhibition> iList){

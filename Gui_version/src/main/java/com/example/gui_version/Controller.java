@@ -20,6 +20,8 @@ public class Controller {
     private ReadBrenda reactionDb, inhibitionDb;
 
     @FXML
+    private Button pathDetailBtn;
+    @FXML
     private CheckBox cBoxInhibitions;
     private String filePath = "";
     @FXML
@@ -163,10 +165,6 @@ public class Controller {
             else {
                 popup("Please try a possible path");
             }
-
-
-
-
         }
 
 
@@ -195,6 +193,27 @@ public class Controller {
         }
     }
 
+    @FXML
+    void openDetailWindow(ActionEvent event) {
+        try {
+            // Load the FXML file for the new stage
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("path-select-view.fxml"));
+
+            // Create a new stage
+            Stage newStage = new Stage();
+
+            // Set the root node and controller for the new stage
+            newStage.setScene(new Scene(loader.load()));
+            newStage.setTitle("Path Select");
+            ControllerPathSelect controller = loader.getController();
+            controller.start(newStage, newStage.getScene(),searchEngine.paths);
+
+            // Show the new stage
+            newStage.show();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
 
     void printLog(Color color, String text){
         logsEntry.appendText(text);
